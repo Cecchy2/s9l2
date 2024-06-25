@@ -10,9 +10,9 @@ class AllTheBooks extends Component {
     return (
       <Container>
         <Row>
-          <Col className="d-flex flex-wrap">
-            {fantasy.map((book, index) => (
-              <Card key={index} style={{ width: "18rem", marginBottom: "1rem" }} className="ms-4">
+          {fantasy.map((book, index) => (
+            <Col>
+              <Card key={index} style={{ width: "18rem", marginBottom: "1rem" }}>
                 <Card.Img variant="top" src={book.img} />
                 <Card.Body>
                   <Card.Title>{book.title}</Card.Title>
@@ -20,8 +20,8 @@ class AllTheBooks extends Component {
                   <Card.Text>{book.price}&euro;</Card.Text>
                 </Card.Body>
               </Card>
-            ))}
-          </Col>
+            </Col>
+          ))}
         </Row>
       </Container>
     );
