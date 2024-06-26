@@ -12,11 +12,10 @@ import Button from "react-bootstrap/Button";
 
 class AllTheBooks extends Component {
   state = {
-    books: [], // Holds the books of the selected genre
-    genre: "", // Holds the current genre
+    books: [],
+    genre: "",
   };
 
-  // Method to load books based on genre
   loadBooks = (genre) => {
     switch (genre) {
       case "fantasy":
