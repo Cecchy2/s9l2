@@ -34,7 +34,7 @@ class AllTheBooks extends Component {
         this.setState({ books: scifi, genre });
         break;
       default:
-        this.setState({ books: [], genre: "" }); // Clear books if no genre matches
+        this.setState({ books: [], genre: "" });
     }
   };
 
